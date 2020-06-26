@@ -12,7 +12,6 @@ const ImageBanner = (props) => {
   }
 
   const subtitle = () => {
-    let result = null
 
     if (props.subtitle) {
       return(
@@ -24,9 +23,9 @@ const ImageBanner = (props) => {
   }
 
   return(
-    <div className={`container ${styles.imageBanner}`} style={componentStyles}>
+    <div className={`${styles.imageBanner}`} style={componentStyles}>
       <h1 className={styles.textBackground}>
-        <span>{props.title}</span>
+        <span className={styles.title}>{props.title}</span>
       </h1>
       {subtitle()}
     </div>

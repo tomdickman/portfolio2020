@@ -68,17 +68,17 @@ class Nav extends React.Component {
   render() {
 
     return (
-    <nav class='container'>
-      <div role='nav' className={styles.navContainer}>
-        <a href='/'  className={styles.navBrand} onClick={this.handleBrandClick}>
-          <img src={image} />
-        </a>
-        <a href='#' className={styles.navItem}>About Me</a>
-        <a href='#' className={styles.navItem}>Skills</a>
-        <a href='#' className={styles.navItem}>Education</a>
-        <a href='#' className={styles.navItem}>Experience</a>
-        </div>
-    </nav>
+      <nav>
+        <div role='nav' className={styles.navContainer}>
+          <a href='/'  className={styles.navBrand} onClick={this.handleBrandClick}>
+            <img src={image} />
+          </a>
+          <a href='#' className={styles.navItem}>About Me</a>
+          <a href='#' className={styles.navItem}>Skills</a>
+          <a href='#' className={styles.navItem}>Education</a>
+          <a href='#' className={styles.navItem}>Experience</a>
+          </div>
+      </nav>
     )
   }
 }

@@ -19,6 +19,11 @@ function Home() {
       />
       <Container>
         <h1>Hi</h1>
+        <p>I'm Tom</p>
+      </Container>
+      <Container>
+        <h1>Hi again</h1>
+        <p>I'm still Tom</p>
       </Container>
     </div>
   )
