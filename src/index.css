@@ -1,0 +1,31 @@
+:root {
+  --white: #fff;
+  --primary: #e7b123;
+  --grey: #333C3F;
+  --light-grey: rgb(113, 118, 121);
+  --primary-transparent: #e7b123dd;
+  --font-size: 16px;
+}
+
+body {
+  margin: 50;
+  padding: 50;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+  background-color: var(--light-grey);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: auto 20vw;
+  }
+}

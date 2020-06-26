@@ -1,0 +1,11 @@
+.containerDefaults {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: auto 20vw;
+  }
+}

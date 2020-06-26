@@ -1,0 +1,33 @@
+.imageBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5vw;
+}
+
+.imageBanner h1 {
+  font-size: 3em;
+}
+
+.subtitle {
+  margin-top: 2px;
+  font-size: 1.5em;
+}
+
+.textBackground span {
+  background-color: var(--primary-transparent);
+}
+
+@media only screen and (min-width: 768px) {
+  .imageBanner {
+    padding: 0 10em;
+  }
+
+  .imageBanner h1 {
+    font-size: 5em;
+  }
+
+  .subtitle {
+    font-size: 3em;
+  }
+}
