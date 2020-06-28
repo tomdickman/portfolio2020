@@ -1,0 +1,25 @@
+.homeView {
+  background-image: url('/src/assets/banner.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.aboutMe {
+  text-align: center;
+  padding: 3em 1em;
+  background-color: var(--light-grey);
+}
+
+.aboutMe h1 {
+  color: var(--primary);
+}
+
+@media only screen and (min-width: 768px) {
+  .aboutMe {
+    padding: 3em 7em;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+    border-radius: 1em;
+  }
+}

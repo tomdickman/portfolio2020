@@ -1,12 +1,12 @@
-.imageBanner {
+.banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 5vw;
-  max-width: 100vw;
+  height: 100vh;
 }
 
-.imageBanner h1 {
+.banner h1 {
   font-size: 3em;
 }
 
@@ -15,16 +15,16 @@
   font-size: 1.5em;
 }
 
-.textBackground span {
+.bannerText span {
   background-color: var(--primary-transparent);
 }
 
 @media only screen and (min-width: 768px) {
-  .imageBanner {
+  .banner {
     padding: 0 10em;
   }
 
-  .imageBanner h1 {
+  .banner h1 {
     font-size: 5em;
   }
 

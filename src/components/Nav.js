@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styles from './Nav.css'
-import image from '../assets/tomdickmanlogo.svg'
+import image from '../assets/tomdickmanlogo.png'
 
 const mobileBreakPoint = 576;
 
@@ -24,35 +24,29 @@ class Nav extends React.Component {
   handleWindowClick(event) {
     const navNode = document.querySelector('nav')
     if (!navNode.contains(event.target)) {
-      const navItems = document.querySelectorAll(`.${styles.navItem}`)
+      const navItems = document.querySelector(`.${styles.navItems}`)
 
-      navItems.forEach(element => {
-        element.style.display = 'none'
-      })
+      navItems.style.display = 'none'
     }
   }
 
   setInitialNavItemsVisibility() {
     const width = window.innerWidth
-    const navItems = document.querySelectorAll(`.${styles.navItem}`)
+    const navItems = document.querySelector(`.${styles.navItems}`)
 
     if (width > mobileBreakPoint) {
-      navItems.forEach(element => {
-        element.style.display = 'block';
-      })
+      navItems.style.display = 'flex'
     }
   }
 
   toggleNavItems() {
-    const navItems = document.querySelectorAll(`.${styles.navItem}`)
+    const navItems = document.querySelector(`.${styles.navItems}`)
 
-    navItems.forEach(element => {
-      if (element.style.display == 'none' || element.style.display == '') {
-        element.style.display = 'block';
-      } else {
-        element.style.display = 'none';
-      }
-    })
+    if (navItems.style.display == 'none' || navItems.style.display == '') {
+      navItems.style.display = 'flex'
+    } else {
+      navItems.style.display = 'none'
+    }
   }
 
   handleBrandClick(event) {
@@ -73,11 +67,13 @@ class Nav extends React.Component {
           <a href='/'  className={styles.navBrand} onClick={this.handleBrandClick}>
             <img src={image} />
           </a>
-          <a href='#' className={styles.navItem}>About Me</a>
-          <a href='#' className={styles.navItem}>Skills</a>
-          <a href='#' className={styles.navItem}>Education</a>
-          <a href='#' className={styles.navItem}>Experience</a>
+          <div className={styles.navItems}>
+            <a href='#about' className={styles.navItem}>About Me</a>
+            <a href='#skills' className={styles.navItem}>Skills</a>
+            <a href='#education' className={styles.navItem}>Education</a>
+            <a href='#experience' className={styles.navItem}>Experience</a>
           </div>
+        </div>
       </nav>
     )
   }
