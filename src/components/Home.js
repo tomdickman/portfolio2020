@@ -25,12 +25,30 @@ function Home() {
       <Container id='skills' className={styles.skills}>
         <h1>Things I'm skilled with...</h1>
         <div className={styles.skillsIcons}>
-          <div className={styles.skillsIcon}><FontAwesomeIcon icon={['fab', 'html5']}  size='4x' title='HTML5' /></div>
-          <div className={styles.skillsIcon}><FontAwesomeIcon icon={['fab', 'css3']} size='4x' title='CSS' /></div>
-          <div className={styles.skillsIcon}><FontAwesomeIcon icon={['fab', 'js']} size='4x' title='Javascript' /></div>
-          <div className={styles.skillsIcon}><FontAwesomeIcon icon={['fab', 'php']} size='4x' title='PHP' /></div>
-          <div className={styles.skillsIcon}><FontAwesomeIcon icon={['fab', 'react']} size='4x' title='ReactJS' /></div>
-          <div className={styles.skillsIcon}><FontAwesomeIcon icon={['fab', 'aws']} size='4x' title='Amazon Web Services' /></div>
+          <div className={styles.skillsIcon}>
+            <FontAwesomeIcon icon={['fab', 'html5']}  size='6x' title='HTML5' />
+            <p>HTML5</p>
+          </div>
+          <div className={styles.skillsIcon}>
+            <FontAwesomeIcon icon={['fab', 'css3']} size='6x' title='CSS' />
+            <p>CSS</p>
+          </div>
+          <div className={styles.skillsIcon}>
+            <FontAwesomeIcon icon={['fab', 'js']} size='6x' title='Javascript' />
+            <p>Javascript</p>
+          </div>
+          <div className={styles.skillsIcon}>
+            <FontAwesomeIcon icon={['fab', 'php']} size='6x' title='PHP' />
+            <p>PHP</p>
+          </div>
+          <div className={styles.skillsIcon}>
+            <FontAwesomeIcon icon={['fab', 'react']} size='6x' title='ReactJS' />
+            <p>ReactJS</p>
+          </div>
+          <div className={styles.skillsIcon}>
+            <FontAwesomeIcon icon={['fab', 'aws']} size='6x' title='Amazon Web Services' />
+            <p>AWS</p>
+          </div>
         </div>
       </Container>
       <Spacer height='20vh' />

@@ -17,10 +17,15 @@
   flex-direction: row;
   justify-content: center;
   flex-flow: wrap;
+  font-size: 0.75em;
 }
 
 .skillsIcon {
-  padding: 0.5em;
+  padding: 0.5em 1em;
+}
+
+.skillsIcon:hover {
+  color: var(--primary);
 }
 
 :target {
