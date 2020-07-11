@@ -12,7 +12,7 @@ nav {
   flex-direction: column;
   height: 2rem;
   align-items: stretch;
-  padding: 1em 0;
+  padding: 0.5em 0;
   height: calc(2 * var(--font-size));
   width: 100%;
 }
@@ -53,7 +53,7 @@ nav {
 
 @media only screen and (min-width: 576px) {
   nav {
-    padding: 0.5em 1em;
+    padding: 0 1em;
   }
 
   .navBrand {

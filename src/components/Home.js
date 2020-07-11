@@ -41,6 +41,7 @@ function Home() {
       <Container id='experience' className={styles.experience}>
 
       </Container>
+      <Spacer height='20vh' />
     </div>
   )
 }
