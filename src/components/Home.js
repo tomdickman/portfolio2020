@@ -4,6 +4,7 @@ import Banner from './Banner'
 import Container from './Container'
 import Spacer from './Spacer'
 import Footer from './Footer'
+import bannerBg from '../assets/banner.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import styles from './Home.css'

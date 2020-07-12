@@ -41,6 +41,7 @@ nav {
   padding: 0.5em 1em;
   text-decoration: none;
   color: var(--color);
+  background-color: var(--grey);
   text-align: center;
   border-bottom: solid 3px var(--grey);
 }
