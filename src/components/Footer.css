@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--grey);
+    text-align: center;
+}
+
+footer a {
+    padding: 0 0.5em;
+}
+
+footer a:hover {
+    color: var(--white);
+}

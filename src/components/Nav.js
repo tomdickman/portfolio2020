@@ -26,7 +26,8 @@ class Nav extends React.Component {
     if (!navNode.contains(event.target)) {
       const navItems = document.querySelector(`.${styles.navItems}`)
 
-      navItems.style.display = 'none'
+      navItems.classList.add(`${styles.navbarHidden}`)
+      navItems.classList.remove(`${styles.navbarVisible}`)
     }
   }
 
@@ -35,18 +36,20 @@ class Nav extends React.Component {
     const navItems = document.querySelector(`.${styles.navItems}`)
 
     if (width > mobileBreakPoint) {
-      navItems.style.display = 'flex'
+      navItems.classList.add(`${styles.navbarVisible}`)
+      navItems.classList.remove(`${styles.navbarHidden}`)
     }
   }
 
   toggleNavItems() {
     const navItems = document.querySelector(`.${styles.navItems}`)
 
-    if (navItems.style.display == 'none' || navItems.style.display == '') {
-      navItems.style.display = 'flex'
+    if (navItems.classList.contains(`${styles.navbarVisible}`)) {
+      navItems.classList.add(`${styles.navbarHidden}`)
+      navItems.classList.remove(`${styles.navbarVisible}`)    
     } else {
-      navItems.style.display = 'none'
-    }
+      navItems.classList.add(`${styles.navbarVisible}`)
+      navItems.classList.remove(`${styles.navbarHidden}`)    }
   }
 
   handleBrandClick(event) {

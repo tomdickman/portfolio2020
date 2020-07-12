@@ -3,6 +3,7 @@ nav {
   position: fixed;
   z-index: 1000;
   width: 100vw;
+  box-shadow: 0 2px 2px black;
 }
 
 .navContainer {
@@ -29,26 +30,32 @@ nav {
 }
 
 .navItems {
-  display: none;
+  display: flex;
   flex-direction: column;
   padding: 0;
   background-color: var(--grey);
-  }
+  box-shadow: 0 2px 2px black;
+}
 
 .navItem {
   padding: 0.5em 1em;
   text-decoration: none;
   color: var(--color);
   text-align: center;
+  border-bottom: solid 3px var(--grey);
 }
 
 .navItem:hover {
   color: var(--primary);
-  border-bottom: solid 3px;
+  border-bottom: solid 3px var(--primary);
 }
 
-@media only screen and (min-width: 768px) {
+.navbarHidden {
+  visibility: hidden;
+}
 
+.navbarVisible {
+  visibility: visible;
 }
 
 @media only screen and (min-width: 576px) {
@@ -67,7 +74,11 @@ nav {
   }
 
   .navItems {
-    display: flex;
     flex-direction: row;
+    box-shadow: none;
+  }
+
+  .navbarHidden {
+    visibility: visible;
   }
 }
