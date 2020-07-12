@@ -5,7 +5,7 @@ import styles from './Footer.css'
 
 function Footer() {
     return (
-      <footer>
+      <footer id='contact'>
         <div role='footer' className={styles.footerContainer}>
             <h4>Contact Me  </h4>
             <a href='mailto:twdickman@gmail.com'>

@@ -75,6 +75,7 @@ class Nav extends React.Component {
             <a href='#skills' className={styles.navItem}>Skills</a>
             <a href='#education' className={styles.navItem}>Education</a>
             <a href='#experience' className={styles.navItem}>Experience</a>
+            <a href='#contact' className={styles.navItem}>Contact Me</a>
           </div>
         </div>
       </nav>
