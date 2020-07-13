@@ -12,6 +12,7 @@ import styles from './Home.css'
 function Home() {
   return (
     <div className={styles.homeView}>
+      <div className={styles.fixedBg}></div>
       <Nav />
       <Banner
         title='Tom Dickman'
